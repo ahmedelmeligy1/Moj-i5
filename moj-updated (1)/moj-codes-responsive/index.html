@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>خدمات موج</title>
+<link rel="icon" type="image/png" href="assets/logo.png" />
+<link rel="apple-touch-icon" href="assets/logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="nav" id="home">
+    <div class="container nav-inner">
+      <a href="https://moj.sa/" class="logo">
+        <img src="assets/logo.png" alt="موج" class="logo-img" />
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">الرئيسية</a>
+        <a href="#services" class="active">الخدمات</a>
+        <a href="#faq">الأسئلة الشائعة</a>
+        <a href="#contact" data-contact-open>تواصل معنا</a>
+      </nav>
+      <a href="#join" class="btn btn-outline btn-login">
+        <i class="fa-solid fa-right-to-bracket"></i>
+        تسجيل الدخول
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="فتح القائمة" aria-expanded="false" aria-controls="navLinks">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- Hero -->
+  <section class="hero" style="background-image:url('assets/hero-bg.png');">
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <h1>خدمات موج لإدارة ونمو أعمالك</h1>
+        <p class="lead">اختر الخدمات المناسبة لتشغيل متجرك،وتحسين ظهوره</p>
+        <p class="sub" ><b> ولإدارة أعمالك عبر منصة تجارة إلكترونية موثوقة</b></p>
+        <div class="hero-cta">
+          <a href="#services" class="btn btn-primary">استعرض الخدمات</a>
+          <a href="#contact" class="btn btn-ghost">
+            <i class="fa-solid fa-comments"></i>
+            تواصل مع مستشار موج
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container" id="services">
+    <!-- Filter Bar -->
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">
+        <i class="fa-solid fa-table-cells-large"></i>
+        الكل
+      </button>
+      <button class="filter-btn" data-filter="available"><span class="dot dot-green"></span> متاح الآن</button>
+      <button class="filter-btn" data-filter="soon"><span class="dot dot-orange"></span> قريباً</button>
+      <button class="filter-btn" data-filter="communication"><i class="fa-solid fa-comment-dots"></i> التواصل</button>
+      <button class="filter-btn" data-filter="ai"><i class="fa-solid fa-brain"></i> الذكاء</button>
+      <button class="filter-btn" data-filter="reports"><i class="fa-solid fa-chart-column"></i> التقارير</button>
+      <button class="filter-btn" data-filter="operations"><i class="fa-solid fa-gear"></i> التشغيل</button>
+      <button class="filter-btn" data-filter="marketing"><i class="fa-solid fa-bullhorn"></i> التسويق</button>
+    </div>
+
+    <!-- Main Cards Grid -->
+    <div class="cards-grid">
+      <article class="card" data-status="soon" data-category="communication">
+        <div class="card-head">
+          <div class="icon-box icon-green"><i class="fa-brands fa-whatsapp"></i></div>
+          <span class="badge badge-orange">قريباً</span>
+        </div>
+        <h3>باقات واتساب</h3>
+        <ul class="card-list"><li>رسائل تشغيلية وقوالب تواصل</li><li>خدمة عملاء عبر واتساب</li><li>ربط مع مركز الأعمال الموحد</li></ul>
+        <a href="#contact" class="card-btn">سجل اهتمامك</a>
+      </article>
+
+      <article class="card" data-status="soon" data-category="operations">
+        <div class="card-head">
+          <div class="icon-box icon-purple"><i class="fa-solid fa-table-cells-large"></i></div>
+          <span class="badge badge-orange">قريباً</span>
+        </div>
+        <h3>مركز الأعمال الموحد</h3>
+        <ul class="card-list"><li>إدارة الطلبات والخدمات والدعم</li><li>توحيد العمليات والبيانات</li><li>التشغيل من مركز واحد</li></ul>
+        <a href="#how" class="card-btn">عرض التفاصيل</a>
+      </article>
+
+      <article class="card" data-status="soon" data-category="ai">
+        <div class="card-head">
+          <div class="icon-box icon-blue"><i class="fa-solid fa-robot"></i></div>
+          <span class="badge badge-orange">قريباً</span>
+        </div>
+        <h3>المساعد الذكي</h3>
+        <ul class="card-list"><li>توصيات ذكية للمنتجات</li><li>وصف تلقائي احترافي</li><li>تحسين تجربة التاجر</li></ul>
+        <a href="#contact" class="card-btn">قريباً</a>
+      </article>
+
+      <article class="card" data-status="available" data-category="operations">
+        <div class="card-head">
+          <div class="icon-box icon-purple"><i class="fa-solid fa-shield-halved"></i></div>
+          <span class="badge badge-yellow">متاح بشروط</span>
+        </div>
+        <h3>شارة موثوق</h3>
+        <ul class="card-list"><li>تعزز الثقة في متجرك</li><li>بعد التحقق والمراجعة</li></ul>
+        <a href="#contact" class="card-btn">اطلب الشارة</a>
+      </article>
+
+      <article class="card" data-status="available" data-category="reports">
+        <div class="card-head">
+          <div class="icon-box icon-green"><i class="fa-solid fa-chart-line"></i></div>
+          <span class="badge badge-green">متاح</span>
+        </div>
+        <h3>التقارير المتقدمة</h3>
+        <ul class="card-list"><li>مؤشرات أداء وتقارير تفصيلية</li><li>تصاعد لاتخاذ القرار</li></ul>
+        <a href="#availability" class="card-btn">عرض المزايا</a>
+      </article>
+
+      <article class="card" data-status="available" data-category="marketing">
+        <div class="card-head">
+          <div class="icon-box icon-orange"><i class="fa-solid fa-bullhorn"></i></div>
+          <span class="badge badge-green">متاح</span>
+        </div>
+        <h3>الظهور المميز والإعلانات</h3>
+        <ul class="card-list"><li>زيادة الظهور داخل موج</li><li>حلول إعلانية فعّالة</li><li>تعزيز نمو المتجر</li></ul>
+        <a href="#contact" class="card-btn">اطلب الخدمة</a>
+      </article>
+    </div>
+
+    <!-- Extra Services -->
+    <h2 class="section-title" id="extras">خدمات إضافية حسب الحاجة</h2>
+    <div class="mini-grid">
+      <div class="mini-card">
+        <div class="mini-head">
+          <span class="mini-title">تصوير وتصميم</span>
+          <div class="mini-icon icon-purple-soft"><i class="fa-solid fa-camera-retro"></i></div>
+        </div>
+        <p>تصوير منتجات وتصميم صور احترافية.</p>
+        <span class="mini-badge badge-purple">عبر شركاء أو AI</span>
+        <a href="#contact" class="mini-btn mini-btn-purple">اطلب عرض سعر / اطلب الخدمة</a>
+      </div>
+
+      <div class="mini-card">
+        <div class="mini-head">
+          <span class="mini-title">تليجرام</span>
+          <div class="mini-icon icon-blue-soft"><i class="fa-brands fa-telegram"></i></div>
+        </div>
+        <p>إشعارات وتواصل عبر تليجرام.</p>
+        <span class="mini-badge badge-orange">قريباً</span>
+        <a href="#contact" class="mini-btn mini-btn-orange">سجل اهتمامك</a>
+      </div>
+
+      <div class="mini-card">
+        <div class="mini-head">
+          <span class="mini-title">API وربط الأنظمة</span>
+          <div class="mini-icon icon-purple-soft"><i class="fa-solid fa-code"></i></div>
+        </div>
+        <p>ربط متجرك مع الأنظمة الخارجية والإضافات.</p>
+        <span class="mini-badge badge-orange">قريباً</span>
+        <a href="#contact" class="mini-btn mini-btn-orange">سجل اهتمامك</a>
+      </div>
+
+      <div class="mini-card">
+        <div class="mini-head">
+          <span class="mini-title">POS أساسي</span>
+          <div class="mini-icon icon-green-soft"><i class="fa-solid fa-cash-register"></i></div>
+        </div>
+        <p>متاح متجرك كأساس.</p>
+        <span class="mini-badge badge-green">متاح</span>
+        <a href="#contact" class="mini-btn mini-btn-green">اطلب الخدمة</a>
+      </div>
+
+      <div class="mini-card">
+        <div class="mini-head">
+          <span class="mini-title">رابط مباشر للمتجر</span>
+          <div class="mini-icon icon-green-soft"><i class="fa-solid fa-link"></i></div>
+        </div>
+        <p>أساسي لكل متجر.</p>
+        <span class="mini-badge badge-green">أساسي</span>
+        <a href="#how" class="mini-btn mini-btn-green">عرض طريقة الاستخدام</a>
+      </div>
+
+      <div class="mini-card">
+        <div class="mini-head">
+          <span class="mini-title">تقارير أداء مخصصة</span>
+          <div class="mini-icon icon-purple-soft"><i class="fa-solid fa-file-lines"></i></div>
+        </div>
+        <p>تقارير تفصيلية حسب احتياجات متجرك.</p>
+        <span class="mini-badge badge-green">متاح</span>
+        <a href="#contact" class="mini-btn mini-btn-green">اطلب الخدمة</a>
+      </div>
+
+      <div class="mini-card">
+        <div class="mini-head">
+          <span class="mini-title">مراجعة جودة المتجر</span>
+          <div class="mini-icon icon-purple-soft"><i class="fa-solid fa-star"></i></div>
+        </div>
+        <p>مراجعة شاملة وتقرير لتحسين الأداء.</p>
+        <span class="mini-badge badge-yellow">متاح جزئياً</span>
+        <a href="#contact" class="mini-btn mini-btn-yellow">اطلب مراجعة / اطلب الخدمة</a>
+      </div>
+
+      <div class="mini-card">
+        <div class="mini-head">
+          <span class="mini-title">تجهيز المتجر ورفع المنتجات</span>
+          <div class="mini-icon icon-purple-soft"><i class="fa-solid fa-box-open"></i></div>
+        </div>
+        <p>إعداد المتجر ورفع المنتجات باحترافية.</p>
+        <span class="mini-badge badge-purple">عبر شركاء أو AI</span>
+        <a href="#contact" class="mini-btn mini-btn-purple">اطلب عرض سعر / اطلب الخدمة</a>
+      </div>
+
+      <div class="mini-card">
+        <div class="mini-head">
+          <span class="mini-title">تحسين صفحة البائع</span>
+          <div class="mini-icon icon-purple-soft"><i class="fa-solid fa-user-gear"></i></div>
+        </div>
+        <p>تحسين الصفحة لزيادة الثقة والتحويل.</p>
+        <span class="mini-badge badge-purple">عبر شركاء أو AI</span>
+        <a href="#contact" class="mini-btn mini-btn-purple">اطلب عرض سعر / اطلب الخدمة</a>
+      </div>
+
+      <div class="mini-card">
+        <div class="mini-head">
+          <span class="mini-title">كتابة وصف المنتجات بالذكاء الاصطناعي</span>
+          <div class="mini-icon icon-purple-soft"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+        </div>
+        <p>أوصاف احترافية متوافقة مع SEO وزيادة التحويل.</p>
+        <span class="mini-badge badge-orange">قريباً</span>
+        <a href="#contact" class="mini-btn mini-btn-orange">سجل اهتمامك</a>
+      </div>
+    </div>
+
+    <!-- How it works -->
+    <h2 class="section-title" id="how">كيف تعمل خدمات موج؟</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <div class="step-head">
+            <h4>اختر الخدمة</h4>
+            <div class="step-icon"><i class="fa-solid fa-hand-pointer"></i></div>
+          </div>
+          <p>تصفح الخدمات واختر ما يناسب احتياج متجرك.</p>
+        </div>
+      </div>
+      <div class="step-arrow">←------</div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <div class="step-head">
+            <h4>أرسل طلبك</h4>
+            <div class="step-icon"><i class="fa-solid fa-paper-plane"></i></div>
+          </div>
+          <p>أرسل طلبك مع التفاصيل المطلوبة وسنستلمه فوراً.</p>
+        </div>
+      </div>
+      <div class="step-arrow">←------</div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <div class="step-head">
+            <h4>نراجع أو نفعل الخدمة</h4>
+            <div class="step-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          </div>
+          <p>نراجع الطلب أو نفعل الخدمة وفقاً للإجراء المناسب.</p>
+        </div>
+      </div>
+      <div class="step-arrow">←------</div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <div class="step-head">
+            <h4>إبدأ الاستفادة من الخدمة</h4>
+            <div class="step-icon"><i class="fa-solid fa-rocket"></i></div>
+          </div>
+          <p>تنطلق الخدمة وترافقك لضمان أفضل النتائج.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Availability Table -->
+    <h2 class="section-title" id="availability">الخدمات المتاحة الآن والخدمات القادمة</h2>
+    <div class="availability">
+      <div class="avail-col">
+        <div class="avail-head green">
+          <i class="fa-solid fa-circle-check"></i>
+          متاح الآن
+        </div>
+        <ul>
+          <li><span>شارة موثوق</span><i class="fa-solid fa-circle-check tick green"></i></li>
+          <li><span>التقارير المتقدمة</span><i class="fa-solid fa-circle-check tick green"></i></li>
+          <li><span>الظهور المميز والإعلانات</span><i class="fa-solid fa-circle-check tick green"></i></li>
+          <li><span>POS أساسي</span><i class="fa-solid fa-circle-check tick green"></i></li>
+        </ul>
+      </div>
+      <div class="avail-col">
+        <div class="avail-head orange">
+          <i class="fa-regular fa-clock"></i>
+          قريباً
+        </div>
+        <ul>
+          <li><span>باقات واتساب</span><i class="fa-regular fa-clock tick orange"></i></li>
+          <li><span>مركز الأعمال الموحد</span><i class="fa-regular fa-clock tick orange"></i></li>
+          <li><span>المساعد الذكي</span><i class="fa-regular fa-clock tick orange"></i></li>
+          <li><span>API وربط الأنظمة</span><i class="fa-regular fa-clock tick orange"></i></li>
+          <li><span>تليجرام</span><i class="fa-regular fa-clock tick orange"></i></li>
+          <li><span>كتابة وصف المنتجات بالذكاء الاصطناعي</span><i class="fa-regular fa-clock tick orange"></i></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Trust bar -->
+    <div class="trust-bar">
+      <div class="trust-item">
+        <div class="trust-icon"><i class="fa-solid fa-shield-halved"></i></div>
+        <div><h5>منصة موثوقة</h5><p>أعلى معايير الأمان والخصوصية.</p></div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon"><i class="fa-solid fa-server"></i></div>
+        <div><h5>إدارة مركزية</h5><p>كل خدماتك من مكان واحد.</p></div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon"><i class="fa-solid fa-chart-line"></i></div>
+        <div><h5>قابلية للتوسع</h5><p>خدمات تنمو مع نمو متجرك.</p></div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon"><i class="fa-solid fa-headset"></i></div>
+        <div><h5>دعم موج</h5><p>فريق متخصص يساندك دائماً.</p></div>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <section class="faq-section" id="faq">
+      <span class="faq-badge">الأسئلة الشائعة</span>
+      <h2 class="faq-title">هل لديك أسئلة؟</h2>
+      <p class="faq-sub">نجيب على كل استفساراتك بوضوح وصراحة</p>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>ما هي خدمات موج؟</span>
+            <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+          </button>
+          <div class="faq-answer">
+            <p>هي خدمات إضافية تساعدك على تشغيل متجرك، تحسين ظهوره، إدارة التواصل مع العملاء، ومتابعة أداء أعمالك عبر منصة موج.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>هل خدمات موج تختلف عن باقة المتجر الأساسية؟</span>
+            <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+          </button>
+          <div class="faq-answer">
+            <p>نعم. باقة المتجر الأساسية مخصصة لتشغيل المتجر، أما خدمات موج فهي خدمات اختيارية يمكن طلبها حسب حاجة نشاطك.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>هل جميع الخدمات متاحة الآن؟</span>
+            <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+          </button>
+          <div class="faq-answer">
+            <p>ليست كلها. بعض الخدمات متاحة حالياً، وبعضها متاح بشروط، وبعضها قيد التجهيز وسيظهر بحالة "قريباً".</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>هل يجب أن أكون تاجراً في موج للاستفادة من الخدمات؟</span>
+            <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+          </button>
+          <div class="faq-answer">
+            <p>بعض الخدمات تحتاج وجود متجر داخل موج، وبعضها يمكن تسجيل الاهتمام به أو طلبه بشكل مستقل حسب نوع الخدمة وشروطها.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>ماذا يحدث بعد طلب الخدمة؟</span>
+            <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+          </button>
+          <div class="faq-answer">
+            <p>يصل طلبك إلى فريق موج لمراجعته، ثم يتم التواصل معك أو تفعيل الخدمة حسب نوعها وحالتها ومتطلباتها.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>هل توجد خدمات تحتاج مراجعة قبل التفعيل؟</span>
+            <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+          </button>
+          <div class="faq-answer">
+            <p>نعم. بعض الخدمات مثل شارة موثوق، الربط التقني، أو الخدمات المخصصة قد تحتاج مراجعة أو إعداداً قبل التفعيل.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>هل يوجد دفع مباشر من هذه الصفحة؟</span>
+            <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+          </button>
+          <div class="faq-answer">
+            <p>حالياً لا. الصفحة مخصصة لعرض الخدمات وتسجيل الاهتمام أو طلب الخدمة، وسيتم توضيح الأسعار أو طريقة الاشتراك حسب كل خدمة.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Early Access Signup -->
+    <section class="signup-section" id="join">
+      <span class="signup-badge">سجّل الآن</span>
+      <h2 class="signup-title">احجز مكانك بين أوائل بائعي وعملاء موج</h2>
+      <p class="signup-sub">املأ بياناتك وسنساعدك تبدأ رحلتك مع موج بخطوات واضحة ومباشرة.</p>
+
+      <div class="signup-card">
+        <form id="signupForm" novalidate>
+          <label class="sf-field">
+            <span>بريدك الإلكتروني</span>
+            <input type="email" name="email" placeholder="name@example.com" inputmode="email" autocomplete="email" required />
+          </label>
+
+          <label class="sf-field">
+            <span>رقم الجوال للتواصل</span>
+            <div class="sf-phone">
+              <span class="sf-code">السعودية 966+</span>
+              <input type="tel" name="phone" placeholder="5X XXX XXXX" dir="ltr" inputmode="numeric" autocomplete="tel" maxlength="9" required />
+            </div>
+          </label>
+
+          <div class="sf-role-group">
+            <span class="sf-role-label">سجلني في موج كـ</span>
+            <div class="sf-roles">
+              <label class="sf-role" data-role="seller">
+                <input type="radio" name="role" value="seller" required />
+                <span class="sf-role-icon"><i class="fa-solid fa-store"></i></span>
+                <span class="sf-role-text">
+                  <strong>سجلني كبائع</strong>
+                  <small>لإنشاء متجرك وإدارة خدماتك عبر موج</small>
+                </span>
+                <span class="sf-role-check"><i class="fa-solid fa-check"></i></span>
+              </label>
+              <label class="sf-role" data-role="buyer">
+                <input type="radio" name="role" value="buyer" required />
+                <span class="sf-role-icon"><i class="fa-solid fa-bag-shopping"></i></span>
+                <span class="sf-role-text">
+                  <strong>سجلني كمشترك</strong>
+                  <small>لاكتشاف المتاجر والتسوق عبر موج</small>
+                </span>
+                <span class="sf-role-check"><i class="fa-solid fa-check"></i></span>
+              </label>
+            </div>
+          </div>
+
+          <label class="sf-agree">
+            <input type="checkbox" name="agree" required />
+            <span>أوافق على إنشاء حساب بموج باستخدام البيانات المدخلة، واستلام رمز التحقق وروابط تعيين كلمة المرور عبر البريد الإلكتروني.</span>
+          </label>
+
+          <button type="submit" class="sf-submit">
+            سجل بياناتك الآن
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+          <p class="sf-note" id="signupNote"></p>
+        </form>
+        <p class="sf-trust"><i class="fa-solid fa-lock"></i> لن نشارك بياناتك، وسنتواصل معك لمساعدتك على بدء رحلتك مع موج.</p>
+      </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner" id="contact" style="background-image:url('assets/cta-bg.png');">
+      <div class="cta-content">
+        <h2>ابدأ بخدمات تناسب متجرك اليوم</h2>
+        <p>اختر من مجموعة خدمات موج ما يساعدك على النمو، التشغيل، والتواصل مع عملائك.</p>
+        <div class="cta-actions">
+          <a href="#services" class="btn btn-white">
+            <i class="fa-solid fa-table-cells-large"></i>
+            استعرض جميع الخدمات
+          </a>
+          <a href="#contact" class="btn btn-white-outline" data-contact-open>
+            <i class="fa-solid fa-headset"></i>
+            تواصل معنا
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="موج" class="footer-logo" />
+        <p>منصة التجارة الإلكترونية الأول للبائعين العرب. نوفر كل ما تحتاجه لبناء تجارتك الرقمية وتنميتها.</p>
+        <div class="footer-social">
+          <a href="https://www.youtube.com/@Mojplatform" aria-label="يوتيوب"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.facebook.com/mojplatform/" aria-label="فيسبوك"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/Mojplatform" aria-label="انستغرام"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://x.com/Mojplatform" aria-label="إكس"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>المنصة</h4>
+        <a href="https://moj.sa/about-us">عن موج</a>
+        <a href="https://moj.sa/contacts" data-contact-open>تواصل معنا</a>
+        <a href="https://moj.sa/blog">المدونة</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>دعم البائعين</h4>
+        <a href="https://moj.sa/products?data_from=featured&page=1">المميزات</a>
+        <a href="https://moj.sa/vendor/auth/registration/index">الباقات</a>
+        <a href="https://moj.sa/helpTopic">الأسئلة الشائعة</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>قانوني</h4>
+        <a href="https://moj.sa/privacy-policy">سياسة المنصة</a>
+        <a href="https://moj.sa/terms-and-condition">الشروط والأحكام</a>
+        <a href="https://moj.sa/contacts">مركز المساعدة</a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p class="footer-copy">© ٢٠٢٦ موج. جميع الحقوق محفوظة لموج.</p>
+      <p class="footer-apps">حمّل تطبيق الجوال على <a href="https://play.google.com/store/apps/details?id=sa.mooj.moj&pcampaignid=web_share&pli=1">Google Play</a> و <a href="https://apps.apple.com/us/app/moj-%D9%85%D9%88%D8%AC/id6739746195">App Store</a></p>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" aria-label="العودة للأعلى">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Details Modal -->
+  <div class="modal-overlay" id="detailsModal" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true">
+      <button class="modal-close" aria-label="إغلاق"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- Contact Modal -->
+  <div class="modal-overlay" id="contactModal" aria-hidden="true">
+    <div class="modal contact-modal" role="dialog" aria-modal="true" aria-labelledby="contactTitle">
+      <button class="modal-close" aria-label="إغلاق" data-contact-close><i class="fa-solid fa-xmark"></i></button>
+      <div class="contact-head">
+        <div class="contact-icon"><i class="fa-solid fa-headset"></i></div>
+        <div>
+          <h2 id="contactTitle">تواصل معنا</h2>
+          <p>سنعاود التواصل معك خلال ساعات العمل — info@moj.sa</p>
+        </div>
+      </div>
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="cf-row">
+          <label class="cf-field">
+            <span>الاسم</span>
+            <input type="text" name="name" required placeholder="اسمك الكامل" />
+          </label>
+          <label class="cf-field">
+            <span>البريد الإلكتروني</span>
+            <input type="email" name="email" placeholder="you@example.com" inputmode="email" autocomplete="email" required />
+          </label>
+        </div>
+        <label class="cf-field">
+          <span>رقم الجوال للتواصل</span>
+          <div class="cf-phone">
+            <span class="cf-code">السعودية 966+</span>
+            <input type="tel" name="phone" placeholder="5X XXX XXXX" dir="ltr" inputmode="numeric" autocomplete="tel" maxlength="9" required />
+          </div>
+        </label>
+        <label class="cf-field">
+          <span>عنوان الرسالة</span>
+          <input type="text" name="subject" required placeholder="موضوع الرسالة" />
+        </label>
+        <label class="cf-field">
+          <span>الرسالة</span>
+          <textarea name="message" rows="4" required placeholder="اكتب رسالتك هنا…"></textarea>
+        </label>
+        <button type="submit" class="cf-submit">
+          <i class="fa-solid fa-paper-plane"></i>
+          إرسال الرسالة
+        </button>
+        <p class="cf-note" id="contactNote"></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
